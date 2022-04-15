@@ -1,0 +1,29 @@
+@import "./settings";
+
+* {
+  font-family: poppins;
+  margin: 0px;
+}
+
+@font-face {
+    font-family: 'Monster Clubhouse';
+    src: url('../../assets/fonts/Monster\ Clubhouse.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  };
+
+ @font-face {
+    font-family: 'Poppins';
+    src: url('../../assets/fonts/Poppins-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  };
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.pointer {
+  cursor: pointer;
+}
