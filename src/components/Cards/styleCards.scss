@@ -1,0 +1,196 @@
+@import '../../styles/base/base';
+@import '../../styles/base/settings';
+// @import '../../pages/Homepage/styles.scss';
+
+.menu {
+    // position: relative;
+    cursor: pointer;
+    width: 266px;
+    background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 150%) 0% 0% no-repeat padding-box;
+    margin-top: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 10px 10px 20px -5px #cccccc;
+    margin-left: 25px;
+    height: 266px;
+    
+    
+  }
+  
+  .mytext{
+    position: relative;
+    top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+    
+  }
+
+  .mytext1{
+    position: relative;
+    color: #d84a4a;
+    font-family: Poppins;
+    font-size: 30px;
+    left: 5px;
+    
+    
+  }
+  
+  .mytext2{
+    position: relative;
+    font-family: Monster Clubhouse;
+    font-size: 30px;
+    color: #d84a4a;
+    left: -5px;
+    
+  }
+
+  .plate{
+    position: relative;
+    top: -30px;
+    // left: -2px;
+  }
+
+  .number{
+    font-size: 25px;
+    position: relative;
+    color: $dark-grey;
+  }
+
+ .mostar{
+   position: relative;
+   opacity: 0;
+   top: -120px;
+
+ }
+
+ .score{
+   display: flex;
+   justify-content: space-around;
+  //  padding: 15px;
+   
+ }
+ .punatje{
+  display: flex;
+  position: relative;
+  top: -20px;
+ }
+
+ .like{
+   width: 19px;
+   position: relative;
+   top: -20px;
+ }
+
+ .star{
+    width: 24px;
+    position: relative;
+    left: -25px;
+ }
+
+ .carrusel{
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+  margin: 40px;
+  height: auto;
+}
+
+.textCard1{
+  
+  top: -20px;
+  font-family: Monster Clubhouse;
+  font-size: 20px;
+  color: $text-red;
+}
+
+.textCard2
+{
+  
+  top: -20px;
+  font-family: Poppins;
+  font-size: 20px;
+  color: $dark-grey;}
+
+ .menu:hover {
+
+  transition: 
+  0.2s 0.1s height,
+  0.5s 0.1s padding,
+  0.5s 0.1s margin,
+  0.3s color,
+  0.2s visibility;
+    height: 400px;
+   .mytext1 {
+     opacity: 0;
+    }
+    .score {
+      opacity: 0;
+    }
+    .mytext2 {
+      opacity: 0;
+    }
+    .mostar {
+      opacity: 1;
+    }
+  }
+
+  .menu:not(:hover) {
+  transition: 
+    0.5s 0.1s height,
+    0.5s 0.1s padding,
+    0.5s 0.1s margin,
+    0.3s color,
+    0.6s visibility;
+}
+    
+
+
+
+
+// .menu-dropdown {    //Pendiente, Absolute o relative?
+
+//   text-align: center;
+//   background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+//   width: 266px;
+//   padding: 2px 0;
+//   position: absolute;
+  
+//   transition:
+//     0.5s padding,
+//     0.5s background;
+// }
+
+
+// .menu-dropdown > div {
+//   overflow: hidden;
+//   height: 30px;
+//   padding: 5px 10px;
+//   // background: rgba(0,0,0,0);
+//   // white-space: nowrap;
+//   transition: 
+//     0.5s height cubic-bezier(.73,.32,.34,1.5),
+//     0.5s padding cubic-bezier(.73,.32,.34,1.5),
+//     0.5s margin cubic-bezier(.73,.32,.34,1.5),
+//     0.5s 0.2s color,
+//     0.2s background-color;
+//     background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+// }
+
+// .menu:not(:hover) > .menu-dropdown > div {
+//   visibility: hidden;
+//   height: 0;
+//   padding-top: 0;
+//   padding-bottom: 0;
+//   margin: 0;
+//   // color: rgba(25,25,25,0);
+//   transition: 
+//     0.5s 0.1s height,
+//     0.5s 0.1s padding,
+//     0.5s 0.1s margin,
+//     0.3s color,
+//     0.6s visibility;
+  
+// }
+
