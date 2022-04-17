@@ -1,6 +1,5 @@
 import "./styleCards.scss";
 import { Link } from "react-router-dom";
-import { constants } from "../../pages/Constants";
 const appImg = require.context("../../assets", true);
 
 export const Cards2 = () => {
