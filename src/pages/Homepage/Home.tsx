@@ -1,13 +1,38 @@
 import "./styles.scss";
-import { useContext } from "react";
+import {  useContext } from "react";
 import { MyContext } from '../../context/Context';
-import { Cards } from "../../components/Cards/Cards";
+import { Cards } from '../../components/Cards/Cards';
+import { constants } from '../Constants';
+
 const appImg = require.context("../../assets", true);
+
+
+interface propss {
+ 
+  children?: React.ReactChild | React.ReactChild[];
+  Cards: React.ReactChild | React.ReactChild[];
+  imgc : string,
+  text1: string,
+  text2: string,
+  score: string,
+  raciones: string,
+  tiempo: string,
+  dificultad: string,
+}
+
+interface arrayCards {
+  imgc : string,
+  text1: string,
+  text2: string,
+  score: string,
+  raciones: string,
+  tiempo: string,
+  dificultad: string,
+}
 
 export const Home = () => {
 
-  // const {recipeId} = useContext(MyContext);
-
+  
   return (
     <>
       <div className="">
@@ -24,16 +49,36 @@ export const Home = () => {
         </div>
 
         <div className="tituloCarrusel">
-          Nuevas recetas
+          Nuevas Recetas
         </div>
 
 
 <div className="conainerCarrusel">
 <div className="carrusel">
-  <Cards  />
-  <Cards  />
-  <Cards  />
-  <Cards  />
+  
+<Cards/>
+<Cards/>
+<Cards/>
+<Cards/>
+
+
+  {/* {constants.map((item:arrayCards)=>(
+    <Cards
+    key={item.imgc}
+    imgc={item.imgc}
+    text1={item.text1}
+    text2={item.text2}
+    score={item.score}
+    raciones={item.raciones}
+    tiempo={item.tiempo}
+    dificultad={item.dificultad}
+    />
+  ))
+} */}
+
+  
+
+
 </div>
 </div>
 

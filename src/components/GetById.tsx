@@ -12,17 +12,15 @@ interface Receta {
 
 export const GetById = () => {
   
-  const {getRecipe, setGetRecipe,recipeId} = useContext(MyContext);
-
+  const {setGetRecipe,recipeId} = useContext(MyContext);
 
   useEffect(() => {
     axios.get(
-        `https://api.spoonacular.com/recipes/${recipeId}/analyzedInstructions?apiKey=d5e3bd2c29c04970bb60b3c4471d40cd`
+        `https://api.spoonacular.com/recipes/${recipeId}/analyzedInstructions?apiKey=ae9ee4f765334935aa87bc1570e32ca2`
       ).then((response) => {
-        setGetRecipe(response.data[0].steps);
+        setGetRecipe(response.data);
     });
   }, [recipeId]);
 
-  console.log(getRecipe);
-    // return getById;
+    
 };

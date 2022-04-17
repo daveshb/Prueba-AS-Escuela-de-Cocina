@@ -1,12 +1,15 @@
 import "./styles.scss";
 import { Recetas } from "../../components/Recetas";
+import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { MyContext } from '../../context/Context';
 const appImg = require.context("../../assets/", true);
 
 export const ComidaRapida = () => {
 
   const consulta = Recetas("pizza");
-
-  const pasta = consulta.map((receta: any) => {
+  const {setRecipeId,setTitulo, recipeId, setImagen} = useContext(MyContext);
+  const arrayConsulta = consulta.map((receta: any) => {
     return {
       id: receta.id,
       title: receta.title,
@@ -14,29 +17,37 @@ export const ComidaRapida = () => {
     };
   });
 
-  const handleClick = (id: number) => {
+  const handleClick = (id: number, title: string, imagen: string) => {
     console.log(id);
+    setRecipeId(id);
+    setTitulo(title);
+    setImagen(imagen);
   };
 
+
   return (
-    <>
+ <>
     <div className="">
-      <img src={appImg("./banner_aux.png")} className="banner" />
+      <img src={appImg("./banner_aux.png")} className="bannerPage" />
     </div>
 
+
     <div className="container">
-      {pasta.map((item) => (
-        <div 
-        onClick={() => handleClick(item.id)} 
-        className="entrada pointer"
+      {arrayConsulta.map((item) => (
+        <Link to="/receta" 
         key={item.id}>
+        <div 
+        onClick={() => handleClick(item.id , item.title, item.image)} 
+        className="entrada pointer"
+        >
           <h2 className="text-card">{item.title}</h2>
           <img className="img-card" src={`${item.image}`} />
         </div>
+        </Link>
       ))}
     </div>
 
-    <div className="footer">
+    <div className="footerPages">
       <div className="textfooter">Con el patrocinio de</div>
       <img className="imgFooter" src={appImg("./Grupo-7610.png")} />
     </div>
