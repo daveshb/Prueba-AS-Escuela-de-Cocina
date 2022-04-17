@@ -5,10 +5,13 @@ import { GetById } from '../../components/GetById';
 
 const appImg = require.context("../../assets/", true);
 
+type Props = {
+  step: number;
+}
 
 
-
-export const RecetaById = () => {
+export const RecetaById  =  () => {
+  GetById();
   const Navigate = useNavigate();
   const { recipeId, imagen,titulo,getRecipe} = useContext(MyContext);
   
@@ -19,7 +22,6 @@ export const RecetaById = () => {
   // console.log(consultaPorId);
   // console.log(getRecipe[0].steps);
 
-  GetById();
   
   const handleReturn = () => {
     Navigate(-1);
@@ -37,15 +39,18 @@ export const RecetaById = () => {
       <div className="ContainerReceta">
         <div className="textReceta">{titulo}</div>
         <img className="imgReceta" src={`${imagen}`} />
-        <div className="textReceta">Ingredientes</div>
-        <div>Aqui los ingredientes</div>
+        {/* <div className="textReceta">Ingredientes</div>
+        <div>Aqui los ingredientes</div> */}
         <div className="textReceta">Preparacion</div>
         <div>
-          {/* {getRecipe[0].steps.map((step) => (
+
+          {getRecipe[0].steps.map((item:Props) => (
             
-              <div>{step.step}</div>
-          ))}
-         */}
+              <li 
+              key={item.step}
+              className="preparacion">{item.step}</li>
+          ))} 
+        
 
         </div>
       </div>

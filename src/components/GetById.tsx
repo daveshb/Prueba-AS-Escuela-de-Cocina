@@ -14,11 +14,10 @@ export const GetById = () => {
   
   const {setGetRecipe,recipeId} = useContext(MyContext);
 
-  useEffect(() => {
-    axios.get(
-        `https://api.spoonacular.com/recipes/${recipeId}/analyzedInstructions?apiKey=ae9ee4f765334935aa87bc1570e32ca2`
-      ).then((response) => {
-        setGetRecipe(response.data);
+   useEffect( ()  =>  {
+    axios.get (`https://api.spoonacular.com/recipes/${recipeId}/analyzedInstructions?apiKey=c0cda2eff7fc40b2be2f8dd29eabca23`)
+    .then((response) => {
+         setGetRecipe(response.data);
     });
   }, [recipeId]);
 
