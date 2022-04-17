@@ -4,23 +4,20 @@ import { constants } from '../../pages/Constants';
 const appImg = require.context("../../assets", true);
 
 
-// const imgc = 'Ojingeo-muchim-5.png';
-
-
-export const Cards = () => {
+export const Cards4 = () => {
   return (
     <>
       <Link className="menu " to="">
         {/* <img src={appImg(`./${imgc}`)} className="plate" /> */}
-        <img src={appImg('./Ojingeo-muchim-5.png')} className="plate" />
+        <img src={appImg('./cherry.png')} className="plate" />
         <div className="mytext">
-          <h2 className="mytext1 ">Ojingeo</h2>
-          <h2 className="mytext2">Muchim</h2>
+          <h2 className="mytext1 ">Sweet</h2>
+          <h2 className="mytext2">Cherries</h2>
         </div>
         <div className="score">
           <div className="punatje">
             <img src={appImg("./icons/ic_star.svg")} className="star" />
-            <div className="number">5.0</div>
+            <div className="number">4.0</div>
           </div>
           <img src={appImg("./icons/ic-favorite.svg")} className="like" />
         </div>

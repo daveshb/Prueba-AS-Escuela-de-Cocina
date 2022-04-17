@@ -3,6 +3,9 @@ import {  useContext } from "react";
 import { MyContext } from '../../context/Context';
 import { Cards } from '../../components/Cards/Cards';
 import { constants } from '../Constants';
+import { Cards3 } from '../../components/Cards/Cards3';
+import { Cards2 } from '../../components/Cards/Cards2';
+import { Cards4 } from '../../components/Cards/Cards4';
 
 const appImg = require.context("../../assets", true);
 
@@ -28,6 +31,7 @@ interface arrayCards {
   raciones: string,
   tiempo: string,
   dificultad: string,
+  id: number,
 }
 
 export const Home = () => {
@@ -56,27 +60,27 @@ export const Home = () => {
 <div className="conainerCarrusel">
 <div className="carrusel">
   
-<Cards/>
-<Cards/>
-<Cards/>
-<Cards/>
 
-
-  {/* {constants.map((item:arrayCards)=>(
-    <Cards
-    key={item.imgc}
-    imgc={item.imgc}
+{/* {constants.map((item:arrayCards) =>  (
+<Cards
+    key={item.id}
+    img={item.imgc}
     text1={item.text1}
     text2={item.text2}
     score={item.score}
     raciones={item.raciones}
     tiempo={item.tiempo}
     dificultad={item.dificultad}
-    />
-  ))
-} */}
+ />
+))} */}
 
-  
+<Cards/>
+<Cards2/>
+<Cards3/>
+<Cards4/>
+
+
+
 
 
 </div>

@@ -35,8 +35,10 @@ export const Tortas = () => {
 
     <div className="container">
       {arrayConsulta.map((item) => (
-        <Link to="/receta" 
-        key={item.id}>
+        <Link  
+        key={item.id}
+        to="/receta"
+        >
         <div 
         onClick={() => handleClick(item.id , item.title, item.image)} 
         className="entrada pointer"

@@ -15,12 +15,6 @@ export const RecetaById  =  () => {
   const Navigate = useNavigate();
   const { recipeId, imagen,titulo,getRecipe} = useContext(MyContext);
   
-  // const consultaPorId =GetById(recipeId);
-
-  
-  // console.log(recipeId);
-  // console.log(consultaPorId);
-  // console.log(getRecipe[0].steps);
 
   
   const handleReturn = () => {
@@ -43,13 +37,13 @@ export const RecetaById  =  () => {
         <div>Aqui los ingredientes</div> */}
         <div className="textReceta">Preparacion</div>
         <div>
-
+{/* 
           {getRecipe[0].steps.map((item:Props) => (
             
               <li 
               key={item.step}
               className="preparacion">{item.step}</li>
-          ))} 
+          ))}  */}
         
 
         </div>

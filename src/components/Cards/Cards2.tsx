@@ -7,15 +7,15 @@ const appImg = require.context("../../assets", true);
 // const imgc = 'Ojingeo-muchim-5.png';
 
 
-export const Cards = () => {
+export const Cards2 = () => {
   return (
     <>
       <Link className="menu " to="">
         {/* <img src={appImg(`./${imgc}`)} className="plate" /> */}
-        <img src={appImg('./Ojingeo-muchim-5.png')} className="plate" />
+        <img src={appImg('./Ojingeo-muchim.png')} className="plate" />
         <div className="mytext">
-          <h2 className="mytext1 ">Ojingeo</h2>
-          <h2 className="mytext2">Muchim</h2>
+          <h2 className="mytext1 ">Cola</h2>
+          <h2 className="mytext2">Chicken</h2>
         </div>
         <div className="score">
           <div className="punatje">
