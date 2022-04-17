@@ -1,50 +1,47 @@
-@import '../../styles/base/base';
-@import '../../styles/base/settings';
+@import "../../styles/base/base";
+@import "../../styles/base/settings";
 
-
-.tres-columnas{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.tres-columnas {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .container {
-    max-width: 1700px;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 20px;   
+  max-width: 1700px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .entrada {
-    height: 350px;
-    width: 350px;
-    display: inline-block;
-    // background: transparent linear-gradient(180deg, #C2E3F3 0%, $dark-grey 100%) 0% 0% no-repeat padding-box;
-    background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
-    margin: 10px;
-    padding: 10px 10px;
-    text-transform: uppercase;
-    border-radius: 30px;
-    text-decoration: none;
-    margin-bottom: 50px;
+  height: 350px;
+  width: 350px;
+  display: inline-block;
+  background: transparent linear-gradient(180deg, #e9f1fa 0%, #ffffff 100%) 0%
+    0% no-repeat padding-box;
+  margin: 10px;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-bottom: 50px;
 }
 
-.text-card{
-    color: $dark-grey;
-    height: 62px;
-    width: 350px;
-    font-family: Poppins;
-    text-align: center;
-    font-size: 17px;
-    padding: 3px;
+.text-card {
+  color: $dark-grey;
+  height: 62px;
+  width: 350px;
+  font-family: Poppins;
+  text-align: center;
+  font-size: 17px;
+  padding: 3px;
 }
 
-.img-card{
-
-    height: 260px;
-    width: 260px;
-    object-fit: cover;
-    border-radius: 20px;
-    margin-left: 40px;
-    
+.img-card {
+  height: 260px;
+  width: 260px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-left: 40px;
 }

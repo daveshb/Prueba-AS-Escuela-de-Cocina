@@ -1,18 +1,13 @@
 import "./styleCards.scss";
 import { Link } from "react-router-dom";
-import { constants } from '../../pages/Constants';
+import { constants } from "../../pages/Constants";
 const appImg = require.context("../../assets", true);
-
-
-// const imgc = 'Ojingeo-muchim-5.png';
-
 
 export const Cards3 = () => {
   return (
     <>
       <Link className="menu " to="">
-        {/* <img src={appImg(`./${imgc}`)} className="plate" /> */}
-        <img src={appImg('./Ojingeo-muchim-1.png')} className="plate" />
+        <img src={appImg("./Ojingeo-muchim-1.png")} className="plate" />
         <div className="mytext">
           <h2 className="mytext1 ">Roasted</h2>
           <h2 className="mytext2">Carrot</h2>
@@ -48,4 +43,3 @@ export const Cards3 = () => {
     </>
   );
 };
-
