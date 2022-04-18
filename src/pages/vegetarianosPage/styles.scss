@@ -8,7 +8,7 @@
 }
 
 .container {
-  max-width: 1700px;
+  // max-width: 1700px;
   width: 100%;
   margin: 0 auto;
   margin-top: 20px;
@@ -66,8 +66,7 @@
 }
 
 .ContainerReceta {
-  // width: 60%;
-  width: 700px;
+  width: 100%;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
@@ -119,4 +118,22 @@
   margin-bottom: 10px;
   padding: 20px;
   margin: 10px;
+}
+
+@media (max-width: 767px) {
+  .preparacion {
+    width: 400px;
+  }
+}
+
+@media (max-width: 428px) {
+  .preparacion {
+    width: 250px;
+  }
+  .textReceta {
+    font-size: 30px;
+  }
+  .imgReceta {
+    margin-left: 10px;
+  }
 }

@@ -3,6 +3,7 @@ import { Recetas } from "../../components/Recetas";
 import { useContext } from "react";
 import { MyContext } from "../../context/Context";
 import { Link } from "react-router-dom";
+import { Menu } from '../../components/Menu/Menu';
 
 const appImg = require.context("../../assets/", true);
 
@@ -29,6 +30,8 @@ export const Vegetarianos = () => {
       <div className="">
         <img src={appImg("./banner_aux.png")} className="bannerPage" />
       </div>
+
+      <Menu/>
 
       <div className="container">
         {arrayConsulta.map((item) => (

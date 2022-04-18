@@ -5,7 +5,7 @@ const appImg = require.context("../../assets", true);
 export const Cards4 = () => {
   return (
     <>
-      <Link className="menu " to="">
+      <Link className="menu card4" to="">
         <img src={appImg("./cherry.png")} className="plate" />
         <div className="mytext">
           <h2 className="mytext1 ">Sweet</h2>

@@ -33,7 +33,7 @@ export const RecetaById = () => {
         <div className="ContainerReceta">
           <div className="textReceta">{titulo}</div>
           <img className="imgReceta" src={`${imagen}`} />
-          <div className="textReceta">Preparacion</div>
+          <div className="textReceta">Preparación</div>
           <div>
             {preparacion &&
               preparacion[0].steps.map((item: Props) => (

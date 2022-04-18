@@ -3,6 +3,7 @@ import { Cards } from "../../components/Cards/Cards";
 import { Cards3 } from "../../components/Cards/Cards3";
 import { Cards2 } from "../../components/Cards/Cards2";
 import { Cards4 } from "../../components/Cards/Cards4";
+import { Menu } from '../../components/Menu/Menu';
 
 const appImg = require.context("../../assets", true);
 
@@ -19,7 +20,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-
+<Menu/>
         <div className="tituloCarrusel">Nuevas Recetas</div>
 
         <div className="conainerCarrusel">

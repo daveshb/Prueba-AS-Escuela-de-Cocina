@@ -1,13 +1,29 @@
 import { Link, NavLink } from "react-router-dom";
 import "./styles.scss";
 
+
+
+const appImg = require.context("../assets", true);
+
 export const Navbar = () => {
   return (
     <div className="navbar">
-      <Link className="link logo" to="/">
+
+      <div className="logoHome">
+ 
+
+
+      <Link className=" logo" to="/">
         <span className="text_1">Recipe</span>
         <span className="text_2">App</span>
       </Link>
+
+      <NavLink className="icoHome" to="/">
+        <img src={appImg("./icons/ic_home.svg")} className="imgIco" />
+      </NavLink>
+
+      </div>
+      
 
       <div className="navbar__end">
         <NavLink
@@ -42,14 +58,14 @@ export const Navbar = () => {
           className={({ isActive }) => " link " + (isActive ? "active" : "")}
           to="/comidaRapida"
         >
-          Comida Rapida
+          Comida Rápida
         </NavLink>
 
         <NavLink
           className={({ isActive }) => " link " + (isActive ? "active" : "")}
           to="/menuNinos"
         >
-          Menu Niños
+          Menú Niños
         </NavLink>
 
         <NavLink
