@@ -1,14 +1,7 @@
 @import "../../styles/base/base";
 @import "../../styles/base/settings";
 
-.tres-columnas {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
 .container {
-  // max-width: 1700px;
   width: 100%;
   margin: 0 auto;
   margin-top: 20px;

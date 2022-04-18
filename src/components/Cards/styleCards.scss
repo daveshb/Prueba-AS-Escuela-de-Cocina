@@ -41,7 +41,6 @@
 .plate {
   position: relative;
   top: -30px;
-  // left: -2px;
 }
 
 .number {
@@ -59,7 +58,6 @@
 .score {
   display: flex;
   justify-content: space-around;
-  //  padding: 15px;
 }
 .punatje {
   display: flex;
@@ -82,8 +80,6 @@
 .carrusel {
   display: flex;
   justify-content: space-between;
-  // margin: 0px;
-  // height: auto;
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -125,9 +121,6 @@
     0.6s visibility;
 }
 
-
-
-
 @media (max-width: 428px) {
  
   .menu{
@@ -163,7 +156,4 @@
   .mytext1{
     margin-right: 10px;
   }
-
-
-
 }

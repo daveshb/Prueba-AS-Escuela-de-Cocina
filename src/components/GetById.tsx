@@ -17,7 +17,7 @@ export const GetById = () => {
     const getData = async () => {
       await axios
         .get(
-          `https://api.spoonacular.com/recipes/${recipeId}/analyzedInstructions?apiKey=3c6879d97c6c4cdb8023b6c9ed92ba8c`
+          `https://api.spoonacular.com/recipes/${recipeId}/analyzedInstructions?apiKey=c0cda2eff7fc40b2be2f8dd29eabca23`
         )
         .then((response) => {
           setGetRecipe(response.data);

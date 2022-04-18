@@ -3,7 +3,7 @@ import { Recetas } from "../../components/Recetas";
 import { useContext } from "react";
 import { MyContext } from "../../context/Context";
 import { Link } from "react-router-dom";
-import { Menu } from '../../components/Menu/Menu';
+import { Menu } from "../../components/Menu/Menu";
 
 const appImg = require.context("../../assets/", true);
 
@@ -19,7 +19,6 @@ export const Vegetarianos = () => {
   });
 
   const handleClick = (id: number, title: string, imagen: string) => {
-    console.log(id);
     setRecipeId(id);
     setTitulo(title);
     setImagen(imagen);
@@ -31,7 +30,7 @@ export const Vegetarianos = () => {
         <img src={appImg("./banner_aux.png")} className="bannerPage" />
       </div>
 
-      <Menu/>
+      <Menu />
 
       <div className="container">
         {arrayConsulta.map((item) => (
@@ -46,7 +45,6 @@ export const Vegetarianos = () => {
           </Link>
         ))}
       </div>
-
       <div className="footerPages">
         <div className="textfooter">Con el patrocinio de</div>
         <img className="imgFooter" src={appImg("./Grupo-7610.png")} />

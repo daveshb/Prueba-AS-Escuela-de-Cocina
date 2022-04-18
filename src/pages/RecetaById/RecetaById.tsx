@@ -19,7 +19,6 @@ export const RecetaById = () => {
   };
 
   const preparacion = GetById();
-  console.log(preparacion);
 
   return (
     <>

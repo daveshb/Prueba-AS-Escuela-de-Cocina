@@ -20,7 +20,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-<Menu/>
+        <Menu/>
         <div className="tituloCarrusel">Nuevas Recetas</div>
 
         <div className="conainerCarrusel">

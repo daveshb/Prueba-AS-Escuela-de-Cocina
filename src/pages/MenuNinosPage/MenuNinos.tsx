@@ -18,7 +18,6 @@ export const MenuNinos = () => {
   });
 
   const handleClick = (id: number, title: string, imagen: string) => {
-    console.log(id);
     setRecipeId(id);
     setTitulo(title);
     setImagen(imagen);

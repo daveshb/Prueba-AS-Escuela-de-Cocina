@@ -44,7 +44,6 @@
 }
 
 .text2 {
-  // font: normal normal normal 40px/54px Monster Clubhouse;
   font-size: 83px;
   font-family: Monster Clubhouse;
   color: $white;
@@ -60,7 +59,6 @@
 }
 
 .conainerCarrusel {
-  
   text-align: center;
   align-items: center;
   display: flex;
@@ -95,50 +93,46 @@
   position: relative;
 }
 
-
 @media (max-width: 767px) {
-
-  .banner{
+  .banner {
     height: 249px;
-    
   }
-.text{
-  top: 46px;
-  left: 121px;
-  
-}
-.conainerCarrusel{
-  position: relative;
-  top: -70px;
-}
+  .text {
+    top: 46px;
+    left: 121px;
+  }
+  .conainerCarrusel {
+    position: relative;
+    top: -70px;
+  }
 
   .text1 {
     font-size: 79px;
   }
-  .text2{
+  .text2 {
     font-size: 83px;
   }
 
-  .tituloCarrusel{
+  .tituloCarrusel {
     font-size: 54px;
     position: relative;
     top: -70px;
   }
-  
+
   .textfooter {
     font-size: 37px;
   }
 
   .imgFooter {
-      height: 167px ;
-      width: 378px;
+    height: 167px;
+    width: 378px;
   }
-  .footer{
+  .footer {
     height: 115px;
     top: 950px;
   }
 
-  .iconHome{
+  .iconHome {
     position: relative;
     top: -300px;
     left: 700px;
@@ -146,54 +140,46 @@
 }
 
 @media (max-width: 428px) {
-
-  .banner{
+  .banner {
     height: 234px;
     width: 720px;
-    
   }
-  .conainerCarrusel{
+  .conainerCarrusel {
     position: relative;
     top: -70px;
-    // left: px;
-    // margin-right: 0px;
-    // margin-left: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .text{
+  .text {
     top: 30px;
     left: 56px;
-    
   }
 
   .text1 {
     font-size: 51px;
   }
-  .text2{
+  .text2 {
     font-size: 51px;
     margin-top: 20px;
   }
 
-  .tituloCarrusel{
+  .tituloCarrusel {
     font-size: 54px;
     position: relative;
     top: -70px;
   }
-  
+
   .textfooter {
     font-size: 26px;
   }
 
   .imgFooter {
-      height: 105px ;
-      width: 228px;
+    height: 105px;
+    width: 228px;
   }
-  .footer{
+  .footer {
     height: 69px;
     top: 950px;
   }
-
-
 }
